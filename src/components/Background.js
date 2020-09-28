@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../index.css'
 import '../Bulma.sass'
-import MapInfo from "./MapInfo"
+
+import Footer from "./Footer"
 
 import randomMap from '../data/randomMap'
 
@@ -14,16 +15,17 @@ class App extends Component {
           backgroundImage: `url(${mapURL})`,
           backgroundPosition: "center center",
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat"
+          backgroundRepeat: "no-repeat",
+          overflow: "hidden"
         }
 
         return (
-          <section className="hero is-fullheight" style={bgStyles}>
-            <div className="hero-body">
+            <section className="hero is-fullheight" style={bgStyles}>
+              <div className="hero-body">
               
-            </div>
-            <MapInfo/>
-          </section>
+              </div>
+              <Footer/>        
+            </section>            
         );
       }
 }
