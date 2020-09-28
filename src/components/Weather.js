@@ -14,8 +14,6 @@ export default class Weather extends Component {
     });
     }
 
-
-
     render() {
         return (
             <div>

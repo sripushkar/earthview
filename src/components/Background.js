@@ -22,7 +22,7 @@ class App extends Component {
 
         return (
             <section className="hero is-fullheight" style={bgStyles}>
-              <h1 className="title is-1" style={{paddingLeft: "0.5%"}}>Earth View Improved</h1>
+              <h1 className="title is-3" style={{paddingLeft: "0.5%", paddingTop: "0.5%"}}>Earth View Improved</h1>
               <div className="hero-body">
                 <Weather/>
               </div>
