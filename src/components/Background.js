@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css'
 import '../Bulma.sass'
+import MapInfo from "./MapInfo"
 
 import randomMap from '../data/randomMap'
 
@@ -15,11 +16,13 @@ class App extends Component {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat"
         }
+
         return (
-          <section class="hero is-fullheight" style={bgStyles}>
-            <div class="hero-body">
-              <h1 class="title has-background-primary-light	">{JSON.stringify(randomMap["Image URL"])}</h1>
+          <section className="hero is-fullheight" style={bgStyles}>
+            <div className="hero-body">
+              
             </div>
+            <MapInfo/>
           </section>
         );
       }

@@ -6,5 +6,6 @@ function randomItem(arr){
 
 const randomMap = randomItem(maps)
 randomMap["Image URL"] = "http://" + randomMap["Image URL"]
+randomMap["Google Maps URL"] = "http://" + randomMap["Google Maps URL"]
 
 export default randomMap
