@@ -3,6 +3,7 @@ import '../index.css'
 import '../Bulma.sass'
 
 import Footer from "./Footer"
+import Weather from "./Weather"
 
 import randomMap from '../data/randomMap'
 
@@ -21,8 +22,9 @@ class App extends Component {
 
         return (
             <section className="hero is-fullheight" style={bgStyles}>
+              <h1 className="title is-1" style={{paddingLeft: "0.5%"}}>Earth View Improved</h1>
               <div className="hero-body">
-              
+                <Weather/>
               </div>
               <Footer/>        
             </section>            
