@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Container } from "@material-ui/core";
+import "./Bulma.sass"
 import Background from "./components/Background";
 const maps = require("./data/maps.json");
 
@@ -11,10 +11,9 @@ class App extends Component {
 
   render() {
     return(
-    <div>
-      <Background/>
-    </div>
-    
+      <div>
+        <Background/>
+      </div>
   )}
 }
 
