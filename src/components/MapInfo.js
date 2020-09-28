@@ -7,10 +7,6 @@ import randomMap from '../data/randomMap'
 
 class MapInfo extends Component {
     render() {
-        const infoStyle = {
-            color: "white",
-            paddingRight: "1%"
-        }
         const mapLink = randomMap["Google Maps URL"]
 
         return (
