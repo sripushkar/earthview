@@ -17,7 +17,7 @@ class App extends Component {
           backgroundPosition: "center center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          overflow: "hidden"
+          overflow: "hidden",
         }
 
         return (
