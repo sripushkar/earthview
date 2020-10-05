@@ -9,8 +9,8 @@ export default class Weather extends Component {
     componentDidMount() {
         const options = {
             enableHighAccuracy: false,
-            timeout: 2000,
-            maximumAge: 500
+            timeout: 5000,
+            maximumAge: 2000
           };
 
         navigator.geolocation.getCurrentPosition(position => {
