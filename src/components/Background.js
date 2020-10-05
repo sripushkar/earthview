@@ -15,7 +15,9 @@ class App extends Component {
   state = {
     oldURL: randomMap["Image URL"],
     mapURL: randomMap["Image URL"],
-    gMapsURL: randomMap["Google Maps URL"]
+    gMapsURL: randomMap["Google Maps URL"],
+    region: randomMap["Region"],
+    country: randomMap["Country"]
   }
   newImage = (newMapURL, gMapsURL) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL})
     
@@ -45,7 +47,7 @@ class App extends Component {
           <div className="hero-body">          
             
           </div>
-          <Footer gMapsURL = {this.state.gMapsURL}/>        
+          <Footer gMapsURL = {this.state.gMapsURL} region = {this.state.region} country = {this.state.country}/>        
         </section> 
         </div>           
     );

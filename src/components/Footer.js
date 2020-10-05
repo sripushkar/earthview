@@ -26,7 +26,7 @@ export default class Footer extends Component {
                 
 
                 <div className="column" style={noPadding}>
-                  <MapInfo gMapsURL = {this.props.gMapsURL}/>
+                  <MapInfo gMapsURL = {this.props.gMapsURL} region = {this.props.region} country = {this.props.country}/>
                 </div>
             </div>
         )
