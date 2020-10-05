@@ -7,7 +7,7 @@ import { getRandomMap } from "../../data/randomMap"
 export default class ReloadImage extends Component {
     onClick = () => {
         const newMap = getRandomMap()
-        this.props.newImage(newMap["Image URL"], newMap["Google Maps URL"])
+        this.props.newImage(newMap["Image URL"], newMap["Google Maps URL"], newMap["Region"], newMap["Country"])
     }
 
     render() {        

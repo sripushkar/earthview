@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import ReloadImage from "./headerComponents/ReloadImage"
 
 export default class Header extends Component {
-    updateImage = (mapsURL, gMapsURL) => {
-        this.props.newImage(mapsURL, gMapsURL)
+    updateImage = (mapsURL, gMapsURL, region, country) => {
+        this.props.newImage(mapsURL, gMapsURL, region, country)
     }
 
     render() {

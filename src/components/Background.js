@@ -19,7 +19,7 @@ class App extends Component {
     region: randomMap["Region"],
     country: randomMap["Country"]
   }
-  newImage = (newMapURL, gMapsURL) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL})
+  newImage = (newMapURL, gMapsURL, region, country) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL, region, country})
     
   render() {
     
