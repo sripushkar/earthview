@@ -7,6 +7,8 @@ import Footer from "./Footer"
 import Weather from "./Weather"
 
 import randomMap from '../data/randomMap'
+import { defaultParticlesConfig, starsConfig } from "../data/particlesConfig"
+import Particles from 'react-particles-js';
 
 class App extends Component {
 
@@ -27,14 +29,25 @@ class App extends Component {
       overflow: "hidden",
     }
 
+    const particlesStyles = {
+        position:"absolute",
+        left:"0",
+        top:"0",
+        width:"100%",
+        height:"100%"
+    }
+
     return (
-        <section className="hero is-fullheight" style={bgStyles}>
-          <Header newImage = {this.newImage}/>
-          <div className="hero-body">
-            {/* <Weather/> */}
+      <div>
+        <section className="hero is-fullheight" style={bgStyles}> 
+          <Particles params={starsConfig} style={particlesStyles}/>      
+          <Header newImage = {this.newImage}/>          
+          <div className="hero-body">          
+            
           </div>
           <Footer gMapsURL = {this.state.gMapsURL}/>        
-        </section>            
+        </section> 
+        </div>           
     );
   }
 }
