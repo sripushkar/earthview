@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import MapInfo from "./MapInfo"
-import Sripushkar from "./Sripushkar"
+import MapInfo from "./footerComponents/MapInfo"
+import Sripushkar from "./footerComponents/Sripushkar"
 
 import "../Bulma.sass"
 
@@ -18,15 +18,15 @@ export default class Footer extends Component {
         }
 
 
-        return (
-                      
+        return (          
             <div className="columns" style={noPadding}>
                 <div className="column" style={noPadding}>
                   <Sripushkar/>
                 </div>
+                
 
                 <div className="column" style={noPadding}>
-                  <MapInfo/>
+                  <MapInfo gMapsURL = {this.props.gMapsURL}/>
                 </div>
             </div>
         )

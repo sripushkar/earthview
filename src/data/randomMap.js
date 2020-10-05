@@ -4,8 +4,13 @@ function randomItem(arr){
     return arr[Math.floor(Math.random() * arr.length)];
   };
 
-const randomMap = randomItem(maps)
-randomMap["Image URL"] = "http://" + randomMap["Image URL"]
-randomMap["Google Maps URL"] = "http://" + randomMap["Google Maps URL"]
+export const getRandomMap = () => {
+  let map = randomItem(maps)
+  map["Image URL"] = "http://" + map["Image URL"]
+  map["Google Maps URL"] = "http://" + map["Google Maps URL"]
+  return map
+}
+
+let randomMap = getRandomMap()
 
 export default randomMap

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../Bulma.sass'
+import '../../Bulma.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
