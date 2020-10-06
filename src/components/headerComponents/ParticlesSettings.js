@@ -15,14 +15,16 @@ export default class particlesSettings extends Component {
 
     handleChange = (value) => {
         //console.log(value)
-        console.log(particles)
+        //console.log(particles)
         this.setState({config: value.config, name: value.label}, () => this.props.updateParticles(this.state.config, this.state.name))
     }
 
     render() {
         const options = [
+            { value: 'none', label: 'None', config: null },
             { value: 'snow', label: 'Snow', config: particles.defaultParticlesConfig },
-            { value: 'stars', label: 'Stars', config: particles.starsConfig}           
+            { value: 'stars', label: 'Stars', config: particles.starsConfig},
+            { value: 'covid', label: 'COVID-19', config: particles.covidConfig }          
           ]
           const styles = {
             width: "auto",
