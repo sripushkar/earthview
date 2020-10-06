@@ -9,8 +9,12 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default class particlesSettings extends Component {
     state = {
-        collapsed: true,
-        defaultConfig: "snow"
+        collapsed: true        
+    }
+
+    handleChange = (value) => {
+        console.log(value)
+        this.setState({config: value.value})
     }
 
     render() {
@@ -23,7 +27,7 @@ export default class particlesSettings extends Component {
           }
         return (
             <div style={styles}>
-                <Select options={options} placeholder="Set Particles"/>
+                <Select options={options} placeholder="Set Particles" onChange={this.handleChange}/>
             </div>
         )
     }
