@@ -18,7 +18,7 @@ class App extends Component {
     gMapsURL: randomMap["Google Maps URL"],
     region: randomMap["Region"],
     country: randomMap["Country"],
-    particlesConfig: {},
+    particlesConfig: null,
     particlesName: "None"
   }
   newImage = (newMapURL, gMapsURL, region, country) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL, region, country})
