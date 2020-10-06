@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReloadImage from "./headerComponents/ReloadImage"
 import ParticlesSettings from "./headerComponents/ParticlesSettings"
+import ReactDropdown from "./headerComponents/ReactDropdown"
 
 export default class Header extends Component {
     updateImage = (mapsURL, gMapsURL, region, country) => {
@@ -23,7 +24,7 @@ export default class Header extends Component {
                     <h1 className="title is-3" style={{paddingLeft: "0.5%", paddingTop: "0.5%"}}>Earth View Improved</h1>
                 </div>
                 <div className="column">
-                    <ParticlesSettings/>
+                    <ReactDropdown/>
                 </div>
                 <div className="column">
                     <ReloadImage newImage={this.updateImage}/>
