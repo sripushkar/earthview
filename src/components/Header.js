@@ -12,8 +12,8 @@ export default class Header extends Component {
         const noPadding = {
             paddingBottom: "0px",
             paddingTop: "0px",
-            paddingRight: "0.5%",
-            paddingLeft: "0.5%",
+            paddingRight: "1%",
+            paddingLeft: "1%",
 
             marginBottom: "0px",            
         }        
@@ -23,11 +23,10 @@ export default class Header extends Component {
                 <div className="column" >
                     <h1 className="title is-3" style={{paddingLeft: "0.5%", paddingTop: "0.5%"}}>Earth View Improved</h1>
                 </div>
-                <div className="column">
-                    <ReactDropdown/>
-                </div>
+                
                 <div className="column">
                     <ReloadImage newImage={this.updateImage}/>
+                    <ReactDropdown/>                    
                 </div>
             </div>
         )

@@ -23,7 +23,9 @@ export default class particlesSettings extends Component {
             { value: 'stars', label: 'Stars' }           
           ]
           const styles = {
-            width: "40%"
+            width: "auto",
+            marginLeft: "75%",
+            marginTop: "-1%"
           }
         return (
             <div style={styles}>
