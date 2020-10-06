@@ -17,7 +17,8 @@ class App extends Component {
     mapURL: randomMap["Image URL"],
     gMapsURL: randomMap["Google Maps URL"],
     region: randomMap["Region"],
-    country: randomMap["Country"]
+    country: randomMap["Country"],
+    particlesConfig: defaultParticlesConfig
   }
   newImage = (newMapURL, gMapsURL, region, country) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL, region, country})
     
@@ -42,7 +43,7 @@ class App extends Component {
     return (
       <div>
         <section className="hero is-fullheight" style={bgStyles}> 
-          <Particles params={starsConfig} style={particlesStyles}/>      
+          <Particles params={this.state.particlesConfig} style={particlesStyles}/>      
           <Header newImage = {this.newImage}/>          
           <div className="hero-body">          
             
