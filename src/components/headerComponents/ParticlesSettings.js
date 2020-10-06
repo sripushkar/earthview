@@ -2,46 +2,36 @@ import React, { Component } from 'react'
 import * as particles from "../../data/particlesConfig"
 import "../../Bulma.sass"
 
+import Select from 'react-select' 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default class particlesSettings extends Component {
     state = {
         collapsed: true,
-        selected: "Snow"
+        config: particles.defaultParticlesConfig        
     }
 
-    openMenu = () => {
-        this.setState({ collapsed: false });
-    }
-    closeMenu = () => {
-        this.setState({ collapsed: true });
-    }
-    changeSelect = (selection) => {
-        this.setState({ selected: selection })
+    handleChange = (value) => {
+        //console.log(value)
+        console.log(particles)
+        this.setState({config: value.config, name: value.label}, () => this.props.updateParticles(this.state.config, this.state.name))
     }
 
     render() {
+        const options = [
+            { value: 'snow', label: 'Snow', config: particles.defaultParticlesConfig },
+            { value: 'stars', label: 'Stars', config: particles.starsConfig}           
+          ]
+          const styles = {
+            width: "auto",
+            marginLeft: "75%",
+            marginTop: "-1%"
+          }
         return (
-            <div className={"dropdown" + (this.state.collapsed ? "" : " is-active")} tabIndex="0" onClick={this.openMenu} onBlur={this.closeMenu}>
-                <div className="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>Particles Settings</span>
-                    <span className="icon is-small">
-                        <FontAwesomeIcon icon={faAngleDown}/>
-                    </span>
-                    </button>
-                </div>
-                <div className="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div className="dropdown-content">
-                        <a className={"dropdown-item" + (this.state.selected === "Snow" ? " is-active" : "")} onClick={(e) => this.changeSelect(e.target.value)}>
-                            Snow
-                        </a>
-                        <a className={"dropdown-item" + (this.state.selected === "Stars" ? " is-active" : "")} onClick={() => this.setState({ selected: "Stars" })}>
-                            Stars
-                        </a>                                  
-                    </div>
-                </div>
+            <div style={styles}>
+                <Select options={options} placeholder="Set Particles" onChange={this.handleChange}/>
             </div>
         )
     }

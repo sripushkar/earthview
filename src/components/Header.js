@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import ReloadImage from "./headerComponents/ReloadImage"
 import ParticlesSettings from "./headerComponents/ParticlesSettings"
-import ReactDropdown from "./headerComponents/ReactDropdown"
 
 export default class Header extends Component {
     updateImage = (mapsURL, gMapsURL, region, country) => {
         this.props.newImage(mapsURL, gMapsURL, region, country)
+    }
+
+    updateParticles = (config, name) => {
+        this.props.newParticles(config, name)
     }
 
     render() {
@@ -26,7 +29,7 @@ export default class Header extends Component {
                 
                 <div className="column">
                     <ReloadImage newImage={this.updateImage}/>
-                    <ReactDropdown/>                    
+                    <ParticlesSettings updateParticles={this.updateParticles}/>                    
                 </div>
             </div>
         )

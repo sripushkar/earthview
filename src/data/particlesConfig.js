@@ -1,4 +1,5 @@
 export const defaultParticlesConfig = {
+    "name": "Snow",
     "particles": {
         "number": {
             "value": 160,
@@ -34,6 +35,7 @@ export const defaultParticlesConfig = {
 }
 
 export const starsConfig = {
+    "name": "Stars",
     "background": {
       "color": {
         "value": ""

@@ -7,7 +7,7 @@ import Footer from "./Footer"
 import Weather from "./Weather"
 
 import randomMap from '../data/randomMap'
-import { defaultParticlesConfig, starsConfig } from "../data/particlesConfig"
+import * as particles from "../data/particlesConfig"
 import Particles from 'react-particles-js';
 
 class App extends Component {
@@ -18,10 +18,12 @@ class App extends Component {
     gMapsURL: randomMap["Google Maps URL"],
     region: randomMap["Region"],
     country: randomMap["Country"],
-    particlesConfig: defaultParticlesConfig
+    particlesConfig: particles.defaultParticlesConfig,
+    particlesName: "snow"
   }
   newImage = (newMapURL, gMapsURL, region, country) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL, region, country})
-    
+  changeParticles = (config, name) => this.setState({particlesConfig: config, particlesName: name})
+
   render() {
     
     const bgStyles = {
@@ -44,7 +46,7 @@ class App extends Component {
       <div>
         <section className="hero is-fullheight" style={bgStyles}> 
           <Particles params={this.state.particlesConfig} style={particlesStyles}/>      
-          <Header newImage = {this.newImage}/>          
+          <Header newImage = {this.newImage} newParticles = {this.changeParticles}/>          
           <div className="hero-body">          
             
           </div>
