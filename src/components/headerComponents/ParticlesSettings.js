@@ -14,8 +14,6 @@ export default class particlesSettings extends Component {
     }
 
     handleChange = (value) => {
-        //console.log(value)
-        //console.log(particles)
         this.setState({config: value.config, name: value.label}, () => this.props.updateParticles(this.state.config, this.state.name))
     }
 
