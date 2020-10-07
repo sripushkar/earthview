@@ -24,7 +24,8 @@ export default class particlesSettings extends Component {
             { value: 'none', label: 'None', config: null },
             { value: 'snow', label: 'Snow', config: particles.defaultParticlesConfig },
             { value: 'stars', label: 'Stars', config: particles.starsConfig},
-            { value: 'covid', label: 'COVID-19', config: particles.covidConfig }          
+            { value: 'covid', label: 'COVID-19', config: particles.covidConfig },
+            { value: 'cum', label: 'Cum', config: particles.spermConfig }
           ]
           const styles = {
             width: "auto",
