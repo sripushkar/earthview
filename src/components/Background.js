@@ -52,7 +52,7 @@ class App extends Component {
           </div>
           <Footer gMapsURL = {this.state.gMapsURL} region = {this.state.region} country = {this.state.country}/>        
         </section> 
-        </div>           
+      </div>           
     );
   }
 }
