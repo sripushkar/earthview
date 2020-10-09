@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/sripushkar.me/earthview/static/css/main.b6f64273.chunk.css",
-    "main.js": "/sripushkar.me/earthview/static/js/main.cfea9367.chunk.js",
-    "main.js.map": "/sripushkar.me/earthview/static/js/main.cfea9367.chunk.js.map",
-    "runtime-main.js": "/sripushkar.me/earthview/static/js/runtime-main.d23aa256.js",
-    "runtime-main.js.map": "/sripushkar.me/earthview/static/js/runtime-main.d23aa256.js.map",
-    "static/js/2.d21be261.chunk.js": "/sripushkar.me/earthview/static/js/2.d21be261.chunk.js",
-    "static/js/2.d21be261.chunk.js.map": "/sripushkar.me/earthview/static/js/2.d21be261.chunk.js.map",
-    "index.html": "/sripushkar.me/earthview/index.html",
-    "precache-manifest.e2aa69ca5ca665a1f63feb6a40d1b37b.js": "/sripushkar.me/earthview/precache-manifest.e2aa69ca5ca665a1f63feb6a40d1b37b.js",
-    "service-worker.js": "/sripushkar.me/earthview/service-worker.js",
-    "static/css/main.b6f64273.chunk.css.map": "/sripushkar.me/earthview/static/css/main.b6f64273.chunk.css.map",
-    "static/js/2.d21be261.chunk.js.LICENSE.txt": "/sripushkar.me/earthview/static/js/2.d21be261.chunk.js.LICENSE.txt"
+    "main.css": "/earthview/static/css/main.b6f64273.chunk.css",
+    "main.js": "/earthview/static/js/main.5bbcbbdc.chunk.js",
+    "main.js.map": "/earthview/static/js/main.5bbcbbdc.chunk.js.map",
+    "runtime-main.js": "/earthview/static/js/runtime-main.cb983cca.js",
+    "runtime-main.js.map": "/earthview/static/js/runtime-main.cb983cca.js.map",
+    "static/js/2.d21be261.chunk.js": "/earthview/static/js/2.d21be261.chunk.js",
+    "static/js/2.d21be261.chunk.js.map": "/earthview/static/js/2.d21be261.chunk.js.map",
+    "index.html": "/earthview/index.html",
+    "precache-manifest.09da09eea85e4b41c3ed81318f81e5f6.js": "/earthview/precache-manifest.09da09eea85e4b41c3ed81318f81e5f6.js",
+    "service-worker.js": "/earthview/service-worker.js",
+    "static/css/main.b6f64273.chunk.css.map": "/earthview/static/css/main.b6f64273.chunk.css.map",
+    "static/js/2.d21be261.chunk.js.LICENSE.txt": "/earthview/static/js/2.d21be261.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d23aa256.js",
+    "static/js/runtime-main.cb983cca.js",
     "static/js/2.d21be261.chunk.js",
     "static/css/main.b6f64273.chunk.css",
-    "static/js/main.cfea9367.chunk.js"
+    "static/js/main.5bbcbbdc.chunk.js"
   ]
 }
