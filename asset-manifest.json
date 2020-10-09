@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sripushkar.me/earthview/static/css/main.b6f64273.chunk.css",
+    "main.js": "/sripushkar.me/earthview/static/js/main.f5cba6da.chunk.js",
+    "main.js.map": "/sripushkar.me/earthview/static/js/main.f5cba6da.chunk.js.map",
+    "runtime-main.js": "/sripushkar.me/earthview/static/js/runtime-main.d23aa256.js",
+    "runtime-main.js.map": "/sripushkar.me/earthview/static/js/runtime-main.d23aa256.js.map",
+    "static/js/2.d21be261.chunk.js": "/sripushkar.me/earthview/static/js/2.d21be261.chunk.js",
+    "static/js/2.d21be261.chunk.js.map": "/sripushkar.me/earthview/static/js/2.d21be261.chunk.js.map",
+    "index.html": "/sripushkar.me/earthview/index.html",
+    "precache-manifest.269d1d9f38081fc9a63ab7dbe20f9a01.js": "/sripushkar.me/earthview/precache-manifest.269d1d9f38081fc9a63ab7dbe20f9a01.js",
+    "service-worker.js": "/sripushkar.me/earthview/service-worker.js",
+    "static/css/main.b6f64273.chunk.css.map": "/sripushkar.me/earthview/static/css/main.b6f64273.chunk.css.map",
+    "static/js/2.d21be261.chunk.js.LICENSE.txt": "/sripushkar.me/earthview/static/js/2.d21be261.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d23aa256.js",
+    "static/js/2.d21be261.chunk.js",
+    "static/css/main.b6f64273.chunk.css",
+    "static/js/main.f5cba6da.chunk.js"
+  ]
+}
