@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/earthview/precache-manifest.09da09eea85e4b41c3ed81318f81e5f6.js"
+  "/earthview/precache-manifest.8541122ae4557e1687e09ea4dfa6baf9.js"
 );
 
 self.addEventListener('message', (event) => {

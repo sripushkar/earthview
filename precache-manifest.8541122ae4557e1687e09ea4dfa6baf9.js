@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f019850572c30fd4eb7d82fc7e22799e",
+    "revision": "efd1ead640ca55b9394a8cf5ef84c598",
     "url": "/earthview/index.html"
   },
   {
