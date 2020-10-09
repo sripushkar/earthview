@@ -18,7 +18,7 @@ class App extends Component {
     gMapsURL: randomMap["Google Maps URL"],
     region: randomMap["Region"],
     country: randomMap["Country"],
-    particlesConfig: null,
+    particlesConfig: {},
     particlesName: "None"
   }
   newImage = (newMapURL, gMapsURL, region, country) => this.setState({oldURL: this.state.mapURL, mapURL: newMapURL, gMapsURL, region, country})
@@ -52,7 +52,7 @@ class App extends Component {
           </div>
           <Footer gMapsURL = {this.state.gMapsURL} region = {this.state.region} country = {this.state.country}/>        
         </section> 
-      </div>           
+        </div>           
     );
   }
 }
