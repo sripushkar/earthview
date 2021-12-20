@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efd1ead640ca55b9394a8cf5ef84c598",
+    "revision": "e4d699e9396a85f9175cb203cc4c81e7",
     "url": "/earthview/index.html"
   },
   {
-    "revision": "f074eb4efa317faa5f50",
+    "revision": "4bf91399389e6e0efd93",
     "url": "/earthview/static/css/main.b6f64273.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/earthview/static/js/2.d21be261.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f074eb4efa317faa5f50",
-    "url": "/earthview/static/js/main.5bbcbbdc.chunk.js"
+    "revision": "4bf91399389e6e0efd93",
+    "url": "/earthview/static/js/main.18eaaed8.chunk.js"
   },
   {
     "revision": "86ba1ada19eb25e45a5b",
